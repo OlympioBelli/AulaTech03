@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="./assets/CSS/style.css" type="text/css">
+    <title>Cervejaria do Pericles Delivery</title>
+    <script>
+        function valida_entrada(){
+            const url = new URLSearchParams(window.location.search)
+            let acesso = url.get("acesso")
+        if (acesso==1){
+            document.getElementById("textoEntrada").innerHTML = "Olá! Gostaria de dar Boas Vindas a Cervejaria do Pericles."
+            
+        }
+        else {
+            document.getElementById("textoEntrada").innerHTML = "Lamentamos Informar mas esse site não é permitido para menores de Idade."
+
+        }
+        }
+    </script>
+</head>
+<body onload="valida_entrada()">
+    <h1 id="textoEntrada">  </h1>>
+</body>
+</html>
